@@ -1,0 +1,6 @@
+num = (input("num: "))
+if num.isdigit():
+digit_sumsum = sum(int(digit) for digit in num)
+print('sum:',digit_sumsum)
+else:
+print("Invalid")
