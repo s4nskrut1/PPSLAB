@@ -1,0 +1,5 @@
+b = float(input('Base: '))
+h = float(input('Height: '))
+area = 0.5*b*h
+area = round(area, 2)
+print('Area:',format(area, '.2f'))
