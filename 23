@@ -1,0 +1,30 @@
+phone = {}
+while True:
+print("1. Add Contact")
+print("2. Remove Contact")
+print("3. Display")
+print("4. Quit")
+try:
+choice = int(input("Enter choice (1-4): "))
+except ValueError:
+print("Invalid input. Please enter a number.");
+continue
+if choice == 1:
+name = input("Name: ")
+num = input("Phone number: ")
+if name in phone:
+print(f'{name} already exists. Updating the
+number.')
+phone[name] = num
+elif choice == 2:
+name = input("Name: ")
+if name in phone:
+del phone [name]
+else:
+print("Not found")
+elif choice == 3:
+print(phone if phone else "{}")
+elif choice == 4:
+break
+else:
+print("Invalid")
