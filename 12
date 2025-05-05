@@ -1,0 +1,9 @@
+# Type Content here...
+num = int(input("Enter a number : "))
+if num<0:
+else:
+print('Enter a positive number')
+fact = 1
+for i in range(1, num+1):
+fact *= i
+print(f"Factorial of given number is : {fact}")
