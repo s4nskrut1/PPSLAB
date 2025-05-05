@@ -1,0 +1,17 @@
+import math
+a = int(input('a: '))
+b = int(input('b: '))
+c = int(input('c: '))
+D = (b**2) - (4*a*c)
+if D>0:
+root1 = (-b + math.sqrt(D))/(2*a)
+root2 = (-b - math.sqrt(D))/(2*a)
+print(f"The roots are: {root1:.2f} and {root2:.2f}")
+elif D == 0:
+else:
+root = -b/(2*a)
+print(f"The root is: {root:.2f}")
+real = b/(2*a)
+imag = math.sqrt(abs(D))/(2*a)
+print(f"The roots are: {-real:.2f}+{imag:.2f}j and {-real:.2f}-
+{imag:.2f}j")
