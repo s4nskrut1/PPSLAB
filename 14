@@ -1,0 +1,15 @@
+combinations.py
+from itertools import permutations
+try:
+digit1 = int(input("digit1 (0-9): "))
+digit2 = int(input("digit2 (0-9): "))
+digit3 = int(input("digit3 (0-9): "))
+if all(0 <= d <= 9 for d in [digit1,digit2,digit3]):
+digits = [str(digit1), str(digit2), str(digit3)]
+combos = permutations(digits)
+for combo in combos:
+print(''.join(combo))
+else:
+print('Invalid')
+except ValueError:
+print("Invalid")
