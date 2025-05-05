@@ -1,0 +1,7 @@
+import string
+sentence = input("")
+nopunct = ""
+for char in sentence:
+if char not in string.punctuation:
+nopunct += char
+print(nopunct)
